@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_content_chapters",
+  "info": {
+    "displayName": "chapter",
+    "icon": "file-contract"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "galery": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.button"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_content_articles",
+  "info": {
+    "displayName": "article",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_global_newsletters",
+  "info": {
+    "displayName": "Newsletter",
+    "icon": "envelope",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.button"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "Navigace",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topNav": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.block"
+    },
+    "socNav": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.block"
+    },
+    "footerNav_1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.block"
+    },
+    "footerNav_2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.block"
+    },
+    "footerNav_3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.block"
+    }
+  }
+}

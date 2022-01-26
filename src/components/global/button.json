@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_global_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "external-link-alt"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
