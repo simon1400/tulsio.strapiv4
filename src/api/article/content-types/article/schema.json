@@ -52,6 +52,11 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
     }
   }
 }
