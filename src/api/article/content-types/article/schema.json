@@ -4,7 +4,7 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Články",
+    "displayName": "Blog posts",
     "description": ""
   },
   "options": {
@@ -57,6 +57,14 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.meta"
+    },
+    "urlStatic": {
+      "type": "enumeration",
+      "enum": [
+        "homep",
+        "contct",
+        "podminky"
+      ]
     }
   }
 }

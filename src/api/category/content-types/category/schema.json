@@ -4,7 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Kategorie",
+    "displayName": "Blog category",
     "description": ""
   },
   "options": {
@@ -34,6 +34,11 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.meta"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
     }
   }
 }
