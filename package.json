@@ -12,11 +12,12 @@
   "devDependencies": {},
   "dependencies": {
     "@colton75/strapi-plugin-ckeditor5": "^1.0.3",
-    "@strapi/plugin-graphql": "4.0.5",
-    "@strapi/plugin-i18n": "4.0.5",
-    "@strapi/plugin-users-permissions": "4.0.5",
-    "@strapi/strapi": "4.0.5",
-    "sqlite3": "5.0.2"
+    "@strapi/plugin-graphql": "4.1.0",
+    "@strapi/plugin-i18n": "4.1.0",
+    "@strapi/plugin-users-permissions": "4.1.0",
+    "@strapi/strapi": "4.1.0",
+    "sqlite3": "5.0.2",
+    "strapi-plugin-sitemap": "^2.0.6"
   },
   "author": {
     "name": "A Strapi developer"
