@@ -2,14 +2,15 @@
   "collectionName": "components_content_faqs",
   "info": {
     "displayName": "faq",
-    "icon": "ankh"
+    "icon": "ankh",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "question": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "answer": {
       "type": "richtext",
