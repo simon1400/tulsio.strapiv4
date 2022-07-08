@@ -2,7 +2,8 @@
   "collectionName": "components_content_chapters",
   "info": {
     "displayName": "chapter",
-    "icon": "file-contract"
+    "icon": "file-contract",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,16 +14,21 @@
       "type": "richtext"
     },
     "galery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "button": {
       "type": "component",
       "repeatable": false,
       "component": "global.button"
+    },
+    "baner": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
