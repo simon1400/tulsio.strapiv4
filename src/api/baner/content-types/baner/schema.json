@@ -4,7 +4,8 @@
   "info": {
     "singularName": "baner",
     "pluralName": "baners",
-    "displayName": "Baners"
+    "displayName": "Baners",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,17 +26,17 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "required": true
+      }
     },
     "position": {
       "pluginOptions": {
