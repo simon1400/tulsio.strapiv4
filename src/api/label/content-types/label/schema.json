@@ -10,10 +10,19 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -28,7 +37,12 @@
     "meta": {
       "type": "component",
       "repeatable": false,
-      "component": "seo.meta"
+      "component": "seo.meta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "color": {
       "type": "enumeration",
@@ -37,7 +51,12 @@
         "green",
         "pink"
       ],
-      "default": "blue"
+      "default": "blue",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

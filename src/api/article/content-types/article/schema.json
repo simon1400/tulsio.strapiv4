@@ -10,13 +10,27 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "perex": {
-      "type": "richtext"
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "image": {
       "type": "media",
@@ -24,12 +38,22 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "chapters": {
       "type": "component",
       "repeatable": true,
-      "component": "content.chapter"
+      "component": "content.chapter",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "authors": {
       "type": "relation",
@@ -56,7 +80,12 @@
     "meta": {
       "type": "component",
       "repeatable": false,
-      "component": "seo.meta"
+      "component": "seo.meta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "urlStatic": {
       "type": "enumeration",
@@ -64,7 +93,12 @@
         "homep",
         "contct",
         "podminky"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
