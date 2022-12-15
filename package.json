@@ -13,17 +13,17 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-graphql": "4.0.5",
-    "@strapi/plugin-i18n": "4.1.10",
-    "@strapi/plugin-users-permissions": "4.1.10",
-    "@strapi/strapi": "4.1.10",
-    "sqlite3": "5.0.2",
-    "strapi-plugin-generate-schema": "^0.0.1",
-    "strapi-plugin-local-image-sharp": "^1.1.0",
-    "strapi-plugin-placeholder": "^4.1.7",
-    "strapi-plugin-publisher": "^1.1.3",
+    "@strapi/plugin-color-picker": "^4.5.4",
+    "@strapi/plugin-graphql": "4.5.4",
+    "@strapi/strapi": "4.5.4",
+    "@strapi/plugin-users-permissions": "4.5.4",
+    "@strapi/plugin-i18n": "4.5.4",
+    "better-sqlite3": "8.0.1",
+    "strapi-plugin-local-image-sharp": "^1.2.1",
+    "strapi-plugin-placeholder": "^4.3.6",
+    "strapi-plugin-publisher": "^1.1.4",
     "strapi-plugin-sitemap": "^2.0.8",
-    "strapi-tiptap-editor": "^0.7.13"
+    "strapi-tiptap-editor": "^0.9.6"
   },
   "author": {
     "name": "A Strapi developer"

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "dictionary-page",
     "pluralName": "dictionary-pages",
-    "displayName": "Dictionary page"
+    "displayName": "Dictionary page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,15 +24,6 @@
       },
       "type": "string",
       "required": true
-    },
-    "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "uid",
-      "targetField": "title"
     },
     "meta": {
       "type": "component",
