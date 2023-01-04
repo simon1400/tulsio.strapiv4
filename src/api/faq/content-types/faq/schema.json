@@ -16,28 +16,6 @@
     }
   },
   "attributes": {
-    "faq": {
-      "displayName": "faq",
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "content.faq",
-      "required": true
-    },
-    "meta": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "seo.meta"
-    },
     "title": {
       "pluginOptions": {
         "i18n": {
