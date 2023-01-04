@@ -34,5 +34,8 @@ module.exports = {
       depthLimit: 50,
       maxLimit: 20,
     }
+  },
+  'drag-drop-content-types': {
+    enabled: true
   }
 }

@@ -33,6 +33,14 @@
       },
       "type": "richtext",
       "required": true
+    },
+    "rank": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "biginteger"
     }
   }
 }
