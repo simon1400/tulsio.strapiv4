@@ -23,7 +23,16 @@ module.exports = {
         },
       },
       faq: {
-        searchableAttributes: ['question', 'answer']
+        transformEntry({ entry }) {
+          return {
+            ...entry,
+            question: entry.faq.map(item => item.question),
+            answer: entry.faq.map(item => item.answer)
+          }
+        },
+        settings: {
+          searchableAttributes: ['question', 'answer']
+        }
       },
     }
   },
