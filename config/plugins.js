@@ -26,8 +26,10 @@ module.exports = {
         transformEntry({ entry }) {
           return {
             ...entry,
-            question: entry.faq.map(item => item.question),
-            answer: entry.faq.map(item => item.answer)
+            faqResult: {
+              question: entry.faq.map(item => item.question),
+              answer: entry.faq.map(item => item.answer)
+            }
           }
         },
         settings: {
