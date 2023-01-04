@@ -53,7 +53,7 @@
           "localized": true
         }
       },
-      "type": "string",
+      "type": "richtext",
       "required": true
     }
   }
