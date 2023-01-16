@@ -87,19 +87,6 @@
         }
       }
     },
-    "urlStatic": {
-      "type": "enumeration",
-      "enum": [
-        "homep",
-        "contct",
-        "podminky"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "background": {
       "pluginOptions": {
         "i18n": {
