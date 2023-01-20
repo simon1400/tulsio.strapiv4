@@ -22,17 +22,7 @@
       "repeatable": false,
       "component": "navigation.block"
     },
-    "footerNav_1": {
-      "type": "component",
-      "repeatable": false,
-      "component": "navigation.block"
-    },
-    "footerNav_2": {
-      "type": "component",
-      "repeatable": false,
-      "component": "navigation.block"
-    },
-    "footerNav_3": {
+    "footer": {
       "type": "component",
       "repeatable": false,
       "component": "navigation.block"
