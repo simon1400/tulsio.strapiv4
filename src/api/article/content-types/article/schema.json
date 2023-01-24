@@ -103,6 +103,15 @@
         "greenYellowG"
       ],
       "default": "blue"
+    },
+    "showShortImg": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
     }
   }
 }
