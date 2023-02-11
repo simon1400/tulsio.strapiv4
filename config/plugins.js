@@ -1,7 +1,10 @@
 module.exports = {
   meilisearch: {
     config: {
+      host: "http://localhost:7700",
+      apiKey: process.env.MEILISEARCH_TOKEN,
       article: {
+        indexName: process.env.MEILISEARCH_PREFIX+'article',
         transformEntry({ entry }) {
           return {
             ...entry,
@@ -17,13 +20,11 @@ module.exports = {
           ],
         },
       },
-      category: {
-        settings: {
-          searchableAttributes: ['title'],
-        },
-      },
       faq: {
-        searchableAttributes: ['title', 'answer']
+        indexName: process.env.MEILISEARCH_PREFIX+'faq',
+        settings: {
+          searchableAttributes: ['title', 'answer']
+        }
       },
     }
   },
