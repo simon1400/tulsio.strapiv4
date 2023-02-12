@@ -10,22 +10,41 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "topNav": {
       "type": "component",
       "repeatable": false,
-      "component": "navigation.block"
+      "component": "navigation.block",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "socNav": {
       "type": "component",
       "repeatable": false,
-      "component": "navigation.block"
+      "component": "navigation.block",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "footer": {
       "type": "component",
       "repeatable": false,
-      "component": "navigation.block"
+      "component": "navigation.block",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

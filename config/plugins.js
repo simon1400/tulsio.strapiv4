@@ -9,13 +9,17 @@ module.exports = {
           return {
             ...entry,
             categoryTitles: entry.categories.map(item => item.title),
+            chaptersTitles: entry.chapters.map(item => item.title),
+            chaptersText: entry.chapters.map(item => item.text)
           }
         },
         settings: {
-          filterableAttributes: ['categoryTitles'],
           searchableAttributes: [
             'title',
+            "chaptersTitles",
+            "chaptersText",
             'categoryTitles',
+            'perex',
             'slug'
           ],
         },
