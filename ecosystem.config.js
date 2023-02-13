@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name   : "Tulsio strapi",
-    script : "yarn start",
+    script : "yarn dev",
     env_production: {}
   }],
 
