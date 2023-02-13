@@ -35,14 +35,6 @@
       "type": "uid",
       "targetField": "title"
     },
-    "perex": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
     "chapters": {
       "type": "component",
       "repeatable": true,
@@ -75,6 +67,18 @@
         }
       },
       "component": "seo.meta"
+    },
+    "perex": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

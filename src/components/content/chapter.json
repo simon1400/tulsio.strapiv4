@@ -10,9 +10,6 @@
     "title": {
       "type": "string"
     },
-    "text": {
-      "type": "richtext"
-    },
     "galery": {
       "type": "media",
       "multiple": true,
@@ -29,6 +26,13 @@
     "baner": {
       "type": "boolean",
       "default": false
+    },
+    "text": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

@@ -13,8 +13,11 @@
       "unique": false
     },
     "answer": {
-      "type": "richtext",
-      "required": true
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

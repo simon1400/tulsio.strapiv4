@@ -24,14 +24,6 @@
         }
       }
     },
-    "perex": {
-      "type": "richtext",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -112,6 +104,18 @@
       },
       "type": "boolean",
       "default": true
+    },
+    "perex": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
