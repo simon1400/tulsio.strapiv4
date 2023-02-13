@@ -37,7 +37,7 @@ module.exports = {
     config: {
       defaultLimit: 50,
       depthLimit: 50,
-      maxLimit: 20,
+      maxLimit: 50,
     }
   },
   'drag-drop-content-types': {
