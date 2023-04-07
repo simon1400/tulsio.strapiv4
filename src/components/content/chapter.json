@@ -23,16 +23,17 @@
       "repeatable": false,
       "component": "global.button"
     },
-    "baner": {
-      "type": "boolean",
-      "default": false
-    },
     "text": {
       "type": "customField",
       "options": {
         "preset": "toolbarBaloon"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "banners_static": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner-static.banner-static"
     }
   }
 }
