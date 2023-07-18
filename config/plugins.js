@@ -35,9 +35,9 @@ module.exports = {
   graphql: {
     enabled: true,
     config: {
-      defaultLimit: 100,
-      depthLimit: 100,
-      maxLimit: 100,
+      defaultLimit: 150,
+      depthLimit: 150,
+      maxLimit: 150,
     }
   },
   'drag-drop-content-types': {
