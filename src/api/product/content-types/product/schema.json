@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "price": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "shopCategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::shop-category.shop-category",
+      "inversedBy": "products"
+    },
+    "blogLabels": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::label.label",
+      "inversedBy": "products"
+    },
+    "sellers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::seller.seller",
+      "inversedBy": "products"
+    },
+    "customId": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "boolean"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "gtin": {
+      "type": "string"
+    },
+    "mpn": {
+      "type": "string"
+    }
+  }
+}

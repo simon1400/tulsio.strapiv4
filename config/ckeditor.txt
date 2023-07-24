@@ -26,6 +26,7 @@ globalThis.CKEditorConfig = {
                     CKEditor5.essentials.Essentials,
                     CKEditor5.blockQuote.BlockQuote,
                     CKEditor5.heading.Heading,
+                    CKEditor5.mediaEmbed.MediaEmbed,
                     CKEditor5.link.Link,
                     CKEditor5.list.List,
                     CKEditor5.paragraph.Paragraph,
