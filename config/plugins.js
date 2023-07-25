@@ -1,10 +1,10 @@
-module.exports = {
+module.exports = ({ env }) => ({
   meilisearch: {
     config: {
       host: "http://localhost:7700",
-      apiKey: process.env.MEILISEARCH_TOKEN,
+      apiKey: env('MEILISEARCH_TOKEN'),
       article: {
-        indexName: process.env.MEILISEARCH_PREFIX+'article',
+        indexName: env('MEILISEARCH_PREFIX')+'article',
         transformEntry({ entry }) {
           return {
             ...entry,
@@ -25,7 +25,7 @@ module.exports = {
         },
       },
       faq: {
-        indexName: process.env.MEILISEARCH_PREFIX+'faq',
+        indexName: env('MEILISEARCH_PREFIX')+'faq',
         settings: {
           searchableAttributes: ['title', 'answer']
         }
@@ -42,5 +42,23 @@ module.exports = {
   },
   'drag-drop-content-types': {
     enabled: true
-  }
-}
+  },
+  'preview-button': {
+    config: {
+      contentTypes: [
+        {
+          uid: 'api::article.article',
+          published: {
+            url: 'https://tulsio.com/{slug}',
+          },
+        },
+        {
+          uid: 'api::article-base.article-base',
+          published: {
+            url: 'https://tulsio.com/{slug}',
+          },
+        },
+      ],
+    },
+  },
+})

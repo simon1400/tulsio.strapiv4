@@ -40,7 +40,7 @@ globalThis.CKEditorConfig = {
                   toolbar: [
                     'heading',
                     '|',
-                    'blockQuote',
+                    'blockQuote', 'mediaEmbed',
                     '|',
                     'bold', 'italic', 'link', 'bulletedList', 'numberedList',
                     '|', 'insertTable',
