@@ -49,7 +49,7 @@ module.exports = ({ env }) => ({
         {
           uid: 'api::article.article',
           published: {
-            url: 'https://tulsio.com/{slug}',
+            url: 'https://tulsio.com/blog/{slug}',
           },
         },
         {
@@ -60,5 +60,5 @@ module.exports = ({ env }) => ({
         },
       ],
     },
-  },
+  }
 })
