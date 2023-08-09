@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product"
+    "displayName": "product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,15 +27,13 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "price": {
-      "type": "string"
-    },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "link": {
       "type": "string"
@@ -43,12 +42,6 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::shop-category.shop-category",
-      "inversedBy": "products"
-    },
-    "blogLabels": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::label.label",
       "inversedBy": "products"
     },
     "sellers": {
@@ -71,6 +64,15 @@
     },
     "mpn": {
       "type": "string"
+    },
+    "price": {
+      "type": "float"
+    },
+    "labels": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-label.product-label",
+      "mappedBy": "products"
     }
   }
 }

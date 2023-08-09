@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "labels",
+  "collectionName": "product_labels",
   "info": {
-    "singularName": "label",
-    "pluralName": "labels",
-    "displayName": "Blog labels",
-    "description": ""
+    "singularName": "product-label",
+    "pluralName": "product-labels",
+    "displayName": "productLabels"
   },
   "options": {
     "draftAndPublish": true
@@ -17,48 +16,6 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "inversedBy": "labels"
-    },
-    "meta": {
-      "type": "component",
-      "repeatable": false,
-      "component": "seo.meta",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "color": {
-      "type": "enumeration",
-      "enum": [
-        "blue",
-        "green",
-        "pink"
-      ],
-      "default": "blue",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "navTitle": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -66,6 +23,42 @@
       },
       "type": "string",
       "required": true
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "title"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "labels"
+    },
+    "color": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "blue",
+        "green",
+        "pink"
+      ]
+    },
+    "navTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     },
     "shortTitle": {
       "pluginOptions": {
@@ -86,6 +79,16 @@
         "preset": "custom"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.meta"
     }
   }
 }
