@@ -4,7 +4,8 @@
   "info": {
     "singularName": "shop-category",
     "pluralName": "shop-categories",
-    "displayName": "shopCategory"
+    "displayName": "shopCategory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -37,6 +38,17 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "shopCategories"
+    },
+    "navTitle": {
+      "type": "string"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
     }
   }
 }
