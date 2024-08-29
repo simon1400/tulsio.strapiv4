@@ -2,15 +2,23 @@
   "collectionName": "components_global_buttons",
   "info": {
     "displayName": "button",
-    "icon": "external-link-alt"
+    "icon": "external-link-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
-      "type": "string"
-    },
     "link": {
       "type": "string"
+    },
+    "ServiceImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
