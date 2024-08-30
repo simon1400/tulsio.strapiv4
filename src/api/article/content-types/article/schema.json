@@ -118,6 +118,17 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
+    "media": {
+      "displayName": "media",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.media"
+    },
     "audio": {
       "allowedTypes": [
         "audios"
