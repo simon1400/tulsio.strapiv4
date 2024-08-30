@@ -128,18 +128,6 @@
         }
       },
       "component": "content.media"
-    },
-    "audio": {
-      "allowedTypes": [
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
     }
   }
 }
