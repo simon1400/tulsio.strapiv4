@@ -1,22 +1,23 @@
 {
   "collectionName": "components_content_media",
   "info": {
-    "displayName": "media"
+    "displayName": "media",
+    "description": ""
   },
   "options": {},
   "attributes": {
+    "podcastLinks": {
+      "displayName": "podcastLinks",
+      "type": "component",
+      "repeatable": true,
+      "component": "content.podcast-links"
+    },
     "audio": {
       "allowedTypes": [
         "audios"
       ],
       "type": "media",
       "multiple": false
-    },
-    "podcastLinks": {
-      "displayName": "podcastLinks",
-      "type": "component",
-      "repeatable": true,
-      "component": "content.podcast-links"
     }
   }
 }
