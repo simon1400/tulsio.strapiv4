@@ -75,10 +75,37 @@ export interface GlobalButton extends Schema.Component {
   info: {
     displayName: 'button';
     icon: 'external-link-alt';
+    description: '';
   };
   attributes: {
     text: Attribute.String;
     link: Attribute.String;
+    ServiceImg: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+  };
+}
+
+export interface ContentPodcastLinks extends Schema.Component {
+  collectionName: 'components_content_podcast_links';
+  info: {
+    displayName: 'podcastLinks';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    url: Attribute.String;
+    logo: Attribute.Media<'images'>;
+  };
+}
+
+export interface ContentMedia extends Schema.Component {
+  collectionName: 'components_content_media';
+  info: {
+    displayName: 'media';
+    description: '';
+  };
+  attributes: {
+    podcastLinks: Attribute.Component<'content.podcast-links', true>;
+    audio: Attribute.Media<'audios'>;
   };
 }
 
@@ -86,6 +113,7 @@ export interface ContentInfoBlock extends Schema.Component {
   collectionName: 'components_content_info_blocks';
   info: {
     displayName: 'infoBlock';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
@@ -97,6 +125,9 @@ export interface ContentInfoBlock extends Schema.Component {
         }
       >;
     image: Attribute.Media<'images'>;
+    background: Attribute.Enumeration<
+      ['blue', 'green', 'yellow', 'purple', 'bluePurpleG', 'greenYellowG']
+    >;
   };
 }
 
@@ -171,6 +202,8 @@ declare module '@strapi/types' {
       'global.newsletter': GlobalNewsletter;
       'global.content': GlobalContent;
       'global.button': GlobalButton;
+      'content.podcast-links': ContentPodcastLinks;
+      'content.media': ContentMedia;
       'content.info-block': ContentInfoBlock;
       'content.faq': ContentFaq;
       'content.chapter': ContentChapter;

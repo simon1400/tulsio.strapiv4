@@ -9,6 +9,7 @@ import i18N from "@strapi/plugin-i18n/strapi-admin";
 import usersPermissions from "@strapi/plugin-users-permissions/strapi-admin";
 import meilisearch from "strapi-plugin-meilisearch/strapi-admin";
 import previewButton from "strapi-plugin-preview-button/strapi-admin";
+import redirects from "strapi-plugin-redirects/strapi-admin";
 import sitemap from "strapi-plugin-sitemap/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
 
@@ -21,6 +22,7 @@ renderAdmin(document.getElementById("strapi"), {
     "users-permissions": usersPermissions,
     meilisearch: meilisearch,
     "preview-button": previewButton,
+    redirects: redirects,
     sitemap: sitemap,
   },
 });
