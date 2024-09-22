@@ -77,6 +77,11 @@
       "relation": "manyToMany",
       "target": "api::product-label.product-label",
       "mappedBy": "products"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
     }
   }
 }
