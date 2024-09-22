@@ -1,4 +1,7 @@
 module.exports = ({ env }) => ({
+  redirects: {
+    enabled: true,
+  },
   meilisearch: {
     config: {
       host: "http://localhost:7700",
