@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product-label",
     "pluralName": "product-labels",
-    "displayName": "productLabels"
+    "displayName": "productLabels",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -47,9 +48,10 @@
       },
       "type": "enumeration",
       "enum": [
-        "blue",
-        "green",
-        "pink"
+        "purple",
+        "red",
+        "yellow",
+        "green"
       ]
     },
     "navTitle": {
