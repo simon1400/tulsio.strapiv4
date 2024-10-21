@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "tags_pages",
+  "info": {
+    "singularName": "tags-page",
+    "pluralName": "tags-pages",
+    "displayName": "Tags page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta"
+    }
+  }
+}

@@ -1281,6 +1281,40 @@ export interface ApiBannerStaticBannerStatic extends Schema.CollectionType {
   };
 }
 
+export interface ApiBlogPageBlogPage extends Schema.SingleType {
+  collectionName: 'blog_pages';
+  info: {
+    singularName: 'blog-page';
+    pluralName: 'blog-pages';
+    displayName: 'Blog page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    meta: Attribute.Component<'seo.meta'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::blog-page.blog-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::blog-page.blog-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    sitemap_exclude: Attribute.Boolean &
+      Attribute.Private &
+      Attribute.DefaultTo<false>;
+  };
+}
+
 export interface ApiCalculatorCalculator extends Schema.SingleType {
   collectionName: 'calculators';
   info: {
@@ -2375,6 +2409,40 @@ export interface ApiShopCategoryShopCategory extends Schema.CollectionType {
   };
 }
 
+export interface ApiTagsPageTagsPage extends Schema.SingleType {
+  collectionName: 'tags_pages';
+  info: {
+    singularName: 'tags-page';
+    pluralName: 'tags-pages';
+    displayName: 'Tags page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    meta: Attribute.Component<'seo.meta'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::tags-page.tags-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::tags-page.tags-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    sitemap_exclude: Attribute.Boolean &
+      Attribute.Private &
+      Attribute.DefaultTo<false>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -2399,6 +2467,7 @@ declare module '@strapi/types' {
       'api::author.author': ApiAuthorAuthor;
       'api::baner.baner': ApiBanerBaner;
       'api::banner-static.banner-static': ApiBannerStaticBannerStatic;
+      'api::blog-page.blog-page': ApiBlogPageBlogPage;
       'api::calculator.calculator': ApiCalculatorCalculator;
       'api::category.category': ApiCategoryCategory;
       'api::dictionary.dictionary': ApiDictionaryDictionary;
@@ -2413,6 +2482,7 @@ declare module '@strapi/types' {
       'api::product-label.product-label': ApiProductLabelProductLabel;
       'api::seller.seller': ApiSellerSeller;
       'api::shop-category.shop-category': ApiShopCategoryShopCategory;
+      'api::tags-page.tags-page': ApiTagsPageTagsPage;
     }
   }
 }
