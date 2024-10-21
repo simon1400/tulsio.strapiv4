@@ -2063,6 +2063,11 @@ export interface ApiProductProduct extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     title: Attribute.String & Attribute.Required;
     slug: Attribute.UID<'api::product.product', 'title'>;
@@ -2096,6 +2101,11 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'manyToMany',
       'api::product-label.product-label'
     >;
+    products: Attribute.Relation<
+      'api::product.product',
+      'oneToMany',
+      'api::product.product'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -2111,6 +2121,12 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::product.product',
+      'oneToMany',
+      'api::product.product'
+    >;
+    locale: Attribute.String;
     sitemap_exclude: Attribute.Boolean &
       Attribute.Private &
       Attribute.DefaultTo<false>;
@@ -2123,6 +2139,7 @@ export interface ApiProductLabelProductLabel extends Schema.CollectionType {
     singularName: 'product-label';
     pluralName: 'product-labels';
     displayName: 'productLabels';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -2151,7 +2168,7 @@ export interface ApiProductLabelProductLabel extends Schema.CollectionType {
       'manyToMany',
       'api::product.product'
     >;
-    color: Attribute.Enumeration<['blue', 'green', 'pink']> &
+    color: Attribute.Enumeration<['purple', 'red', 'yellow', 'green']> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
